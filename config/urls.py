@@ -17,6 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    # admin site
     path("admin/", admin.site.urls),
+
+    # local apps
+    path("", include("pages.urls")),
+
+    # third-party apps
     path("rosetta/", include("rosetta.urls")),
 ]

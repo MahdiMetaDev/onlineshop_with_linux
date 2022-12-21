@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+
+{% load i18n %}
+
+{% block page_title %}
+    {% trans "home" %}
+{% endblock page_title %}
+
+{% block content %}
+
+    {% if user.is_authenticated %}
+        {% trans "welcome" %}, {{ user.username }}
+    {% else %}
+        {% trans "please login first." %}
+    {% endif %}
+
+{% endblock content %}
