@@ -1,0 +1,21 @@
+{% extends '_base.html' %}
+
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block page_title %}
+    {% trans "login_page" %}
+{% endblock page_title %}
+
+{% block content %}
+
+    <h1>{% trans "Login" %}</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-success mt-2" type="submit">
+            {% trans "login" %}
+        </button>
+    </form>
+    
+{% endblock content %}

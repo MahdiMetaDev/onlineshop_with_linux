@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-21 08:03+0330\n"
-"PO-Revision-Date: 2022-12-21 08:05+0330\n"
+"POT-Creation-Date: 2022-12-21 17:00+0330\n"
+"PO-Revision-Date: 2022-12-21 17:03+0330\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,6 +18,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: templates/account/login.html:7
+msgid "login_page"
+msgstr "صفحه ورود"
+
+#: templates/account/login.html:12
+msgid "Login"
+msgstr "وارد شو"
+
+#: templates/account/login.html:17
+msgid "login"
+msgstr "ورود"
+
+#: templates/account/signup.html:7
+msgid "signup_page"
+msgstr "صفحه ثبت نام "
+
+#: templates/account/signup.html:12
+msgid "Signup"
+msgstr "ثبت نام کن"
+
+#: templates/account/signup.html:17
+msgid "signup"
+msgstr "ثبت نام"
 
 #: templates/home.html:6
 msgid "home"

@@ -33,15 +33,18 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "django.contrib.admin",
-    "django.contrib.auth",
+    "django.contrib.auth", # required for allauth
     "django.contrib.contenttypes",
     "django.contrib.sessions",
-    "django.contrib.messages",
+    "django.contrib.messages", # required for allauth
     "django.contrib.staticfiles",
+    "django.contrib.sites", # (new) -> required for allauth
 
     # third party apps
     "rosetta",
     "crispy_forms",
+    "allauth",
+    "allauth.account",
     
 
     # local apps
@@ -69,7 +72,7 @@ TEMPLATES = [
         "OPTIONS": {
             "context_processors": [
                 "django.template.context_processors.debug",
-                "django.template.context_processors.request",
+                "django.template.context_processors.request", # required for allauth
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
             ],
@@ -149,3 +152,10 @@ LOGOUT_REDIRECT_URL = "home"
 
 # Crispy_forms config
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+# django-allauth config
+SITE_ID = 1
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend",
+]

@@ -25,4 +25,5 @@ urlpatterns = [
 
     # third-party apps
     path("rosetta/", include("rosetta.urls")),
+    path("accounts/", include("allauth.urls")),
 ]
