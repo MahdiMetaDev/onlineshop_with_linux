@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     # third party apps
     "rosetta",
+    "crispy_forms",
     
 
     # local apps
@@ -141,3 +142,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # User model config
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+# Authentication config
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"

@@ -2,6 +2,7 @@ asgiref==3.5.2
 certifi==2022.12.7
 charset-normalizer==2.1.1
 Django==4.1.4
+django-crispy-forms==1.14.0
 django-rosetta==0.9.8
 idna==3.4
 Pillow==9.3.0
