@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-21 08:03+0330\n"
-"PO-Revision-Date: 2022-12-21 08:02+0330\n"
-"Last-Translator:   <admin@gmail.com>\n"
+"POT-Creation-Date: 2022-12-22 17:00+0330\n"
+"PO-Revision-Date: 2022-12-22 17:01+0330\n"
+"Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,6 +19,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: pages/templates/pages/aboutus.html:6
+#: templates/pages/aboutus.html:6
 msgid "about us"
 msgstr "درباره ما"
+
+#: templates/pages/aboutus.html:13
+#| msgid "Hello my name is %d"
+msgid "Hello my name is "
+msgstr "سلام اسم من هست"
+
+#: templates/pages/aboutus.html:16
+msgid "This is my email address: "
+msgstr "این ایمیل من است:‌"
+
+#: templates/pages/aboutus.html:21
+msgid "You must login first!"
+msgstr "شما باید اول وارد شوید!"
