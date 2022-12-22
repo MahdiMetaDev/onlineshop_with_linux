@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-21 17:00+0330\n"
-"PO-Revision-Date: 2022-12-21 17:03+0330\n"
+"POT-Creation-Date: 2022-12-22 11:18+0330\n"
+"PO-Revision-Date: 2022-12-22 11:19+0330\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -30,6 +30,22 @@ msgstr "وارد شو"
 #: templates/account/login.html:17
 msgid "login"
 msgstr "ورود"
+
+#: templates/account/logout.html:6
+msgid "logout_page"
+msgstr "صفحه خروج"
+
+#: templates/account/logout.html:10
+msgid "Logout"
+msgstr "خروج"
+
+#: templates/account/logout.html:11
+msgid "Are you sure you want to logout?"
+msgstr "آیا از اینکه خارج شوید مطمئن هستید؟"
+
+#: templates/account/logout.html:14
+msgid "Yes I am sure."
+msgstr "بله مطمئنم"
 
 #: templates/account/signup.html:7
 msgid "signup_page"
@@ -54,3 +70,6 @@ msgstr "خوش آمدید"
 #: templates/home.html:14
 msgid "please login first."
 msgstr "لطفا وارد شوید"
+
+#~ msgid "Are you sure?"
+#~ msgstr "آیا مطمئن هستید؟"

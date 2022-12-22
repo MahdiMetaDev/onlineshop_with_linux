@@ -9,9 +9,9 @@
 {% block content %}
 
     {% if user.is_authenticated %}
-        {% trans "welcome" %}, {{ user.username }}
+        <h1>{% trans "welcome" %}, {{ user.username }}</h1>
     {% else %}
-        {% trans "please login first." %}
+        <h1>{% trans "please login first." %}</h1>
     {% endif %}
 
 {% endblock content %}

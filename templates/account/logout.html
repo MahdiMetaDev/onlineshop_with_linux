@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+
+{% load i18n %}
+
+{% block page_title %}
+    {% trans "logout_page" %}
+{% endblock page_title %}
+
+{% block content %}
+    <h1>{% trans "Logout" %}</h1>
+    <h2>{% trans "Are you sure you want to logout?" %}</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input class="btn btn-danger" type="submit" value="{% trans "Yes I am sure." %}">        
+    </form>
+{% endblock content %}
