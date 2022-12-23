@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+
+{% load i18n %}
+
+{% block page_title %}
+    {% trans "products_details_page" %}
+{% endblock page_title %}
+
+{% block content %}
+
+    <h1>{% trans "Details for " %} {{ product.title }}</h1>
+    <hr>
+    <h3>{{ product.description }}</h3>
+    
+{% endblock content %}

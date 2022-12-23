@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-23 21:48+0330\n"
-"PO-Revision-Date: 2022-12-23 21:51+0330\n"
+"POT-Creation-Date: 2022-12-23 22:11+0330\n"
+"PO-Revision-Date: 2022-12-23 22:12+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,26 +19,34 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: products/models.py:6
+#: models.py:7
 msgid "title"
 msgstr "عنوان"
 
-#: products/models.py:7
+#: models.py:8
 msgid "description"
 msgstr "توضیحات"
 
-#: products/models.py:8
+#: models.py:9
 msgid "price"
 msgstr "قیمت"
 
-#: products/models.py:9
+#: models.py:10
 msgid "active"
 msgstr "فعال"
 
-#: products/templates/products/product_list.html:6
+#: templates/products/product_detail.html:6
+msgid "products_details_page"
+msgstr "صفحه جزئیات محصول"
+
+#: templates/products/product_detail.html:11
+msgid "Details for "
+msgstr "جزئیات برای"
+
+#: templates/products/product_list.html:6
 msgid "List of products"
 msgstr "لیستی از محصولات"
 
-#: products/templates/products/product_list.html:11
+#: templates/products/product_list.html:11
 msgid "Products list"
 msgstr "لیست محصولات"

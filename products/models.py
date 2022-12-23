@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
 
@@ -14,6 +15,6 @@ class Product(models.Model):
     def __str__(self) -> str:
         return self.title
 
-    # def get_absolute_url(self):
-    #     return reverse("", kwargs={"pk": self.pk})
+    def get_absolute_url(self):
+        return reverse("product_detail", kwargs={"pk": self.pk})
     
