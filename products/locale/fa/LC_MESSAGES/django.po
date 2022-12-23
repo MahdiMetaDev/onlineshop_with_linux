@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-23 21:48+0330\n"
-"PO-Revision-Date: 2022-12-22 17:01+0330\n"
+"PO-Revision-Date: 2022-12-23 21:51+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,18 +19,26 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: pages/templates/pages/aboutus.html:6
-msgid "about us"
-msgstr "درباره ما"
+#: products/models.py:6
+msgid "title"
+msgstr "عنوان"
 
-#: pages/templates/pages/aboutus.html:13
-msgid "Hello my name is "
-msgstr "سلام اسم من هست"
+#: products/models.py:7
+msgid "description"
+msgstr "توضیحات"
 
-#: pages/templates/pages/aboutus.html:16
-msgid "This is my email address: "
-msgstr "این ایمیل من است:‌"
+#: products/models.py:8
+msgid "price"
+msgstr "قیمت"
 
-#: pages/templates/pages/aboutus.html:21
-msgid "You must login first!"
-msgstr "شما باید اول وارد شوید!"
+#: products/models.py:9
+msgid "active"
+msgstr "فعال"
+
+#: products/templates/products/product_list.html:6
+msgid "List of products"
+msgstr "لیستی از محصولات"
+
+#: products/templates/products/product_list.html:11
+msgid "Products list"
+msgstr "لیست محصولات"

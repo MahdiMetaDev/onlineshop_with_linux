@@ -1,11 +1,12 @@
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 
 class Product(models.Model):
-    title = models.CharField(max_length=100)
-    description = models.TextField()
-    price = models.PositiveIntegerField(default=0)
-    active = models.BooleanField(default=True)
+    title = models.CharField(_("title"), max_length=100)
+    description = models.TextField(_("description"))
+    price = models.PositiveIntegerField(_("price"), default=0)
+    active = models.BooleanField(_("active"), default=True)
 
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
