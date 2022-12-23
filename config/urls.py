@@ -22,6 +22,7 @@ urlpatterns = [
 
     # local apps
     path("", include("pages.urls")),
+    path("products/", include("products.urls")),
 
     # third-party apps
     path("rosetta/", include("rosetta.urls")),
