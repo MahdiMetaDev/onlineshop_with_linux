@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-23 22:11+0330\n"
-"PO-Revision-Date: 2022-12-23 22:12+0330\n"
+"POT-Creation-Date: 2022-12-24 14:48+0330\n"
+"PO-Revision-Date: 2022-12-24 14:48+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -47,6 +47,9 @@ msgstr "جزئیات برای"
 msgid "List of products"
 msgstr "لیستی از محصولات"
 
-#: templates/products/product_list.html:11
-msgid "Products list"
-msgstr "لیست محصولات"
+#: templates/products/product_list.html:70
+msgid "$"
+msgstr "تومان"
+
+#~ msgid "Products list"
+#~ msgstr "لیست محصولات"
