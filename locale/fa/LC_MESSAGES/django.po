@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-24 17:04+0330\n"
-"PO-Revision-Date: 2022-12-22 11:19+0330\n"
-"Last-Translator:   <admin@gmail.com>\n"
+"PO-Revision-Date: 2022-12-24 17:06+0330\n"
+"Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -25,15 +25,15 @@ msgstr "خانه"
 
 #: templates/_base.html:71
 msgid "blog"
-msgstr ""
+msgstr "بلاگ"
 
 #: templates/_base.html:76
 msgid "about us"
-msgstr ""
+msgstr "درباره ما"
 
 #: templates/_base.html:81
 msgid "contact us"
-msgstr ""
+msgstr "تماس با ما"
 
 #: templates/account/email/email_confirmation_message.txt:8
 #, python-format

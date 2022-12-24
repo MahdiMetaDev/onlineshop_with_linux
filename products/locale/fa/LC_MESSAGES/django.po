@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-24 17:04+0330\n"
-"PO-Revision-Date: 2022-12-24 16:52+0330\n"
+"PO-Revision-Date: 2022-12-24 17:09+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -102,7 +102,7 @@ msgstr "نظر خود را اینجا بنویسید"
 
 #: products/templates/products/product_list.html:6
 msgid "List of products"
-msgstr "لیستی از محصولات"
+msgstr "صفحه محصولات"
 
 #~ msgid "Products list"
 #~ msgstr "لیست محصولات"
