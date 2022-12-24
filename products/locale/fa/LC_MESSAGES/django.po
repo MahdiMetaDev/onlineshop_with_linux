@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-24 16:48+0330\n"
+"POT-Creation-Date: 2022-12-24 17:04+0330\n"
 "PO-Revision-Date: 2022-12-24 16:52+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,91 +19,88 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: models.py:7
+#: products/models.py:7
 msgid "title"
 msgstr "عنوان"
 
-#: models.py:8
+#: products/models.py:8
 msgid "description"
 msgstr "توضیحات"
 
-#: models.py:9
+#: products/models.py:9
 msgid "price"
 msgstr "قیمت"
 
-#: models.py:10
+#: products/models.py:10
 msgid "active"
 msgstr "فعال"
 
-#: templates/products/product_detail.html:6
+#: products/templates/products/product_detail.html:6
 msgid "products_details_page"
 msgstr "صفحه جزئیات محصول"
 
-#: templates/products/product_detail.html:17
-#| msgid "List of products"
+#: products/templates/products/product_detail.html:17
 msgid "details of product"
 msgstr "جزئیات محصول"
 
-#: templates/products/product_detail.html:44
-#: templates/products/product_list.html:70
+#: products/templates/products/product_detail.html:44
+#: products/templates/products/product_list.html:70
 msgid "$"
 msgstr "تومان"
 
-#: templates/products/product_detail.html:74
-#| msgid "description"
+#: products/templates/products/product_detail.html:74
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: templates/products/product_detail.html:77
+#: products/templates/products/product_detail.html:77
 msgid "features"
 msgstr "ویژگی ها"
 
-#: templates/products/product_detail.html:80
+#: products/templates/products/product_detail.html:80
 msgid "comments"
 msgstr "نظرات"
 
-#: templates/products/product_detail.html:94
+#: products/templates/products/product_detail.html:94
 msgid "weight"
 msgstr "وزن"
 
-#: templates/products/product_detail.html:95
+#: products/templates/products/product_detail.html:95
 msgid "gram"
 msgstr "گرم"
 
-#: templates/products/product_detail.html:98
+#: products/templates/products/product_detail.html:98
 msgid "size"
 msgstr "سایز"
 
-#: templates/products/product_detail.html:102
+#: products/templates/products/product_detail.html:102
 msgid "color"
 msgstr "رنگ"
 
-#: templates/products/product_detail.html:104
+#: products/templates/products/product_detail.html:104
 msgid "black"
 msgstr "مشکی"
 
-#: templates/products/product_detail.html:105
+#: products/templates/products/product_detail.html:105
 msgid "green"
 msgstr "سبز"
 
-#: templates/products/product_detail.html:106
+#: products/templates/products/product_detail.html:106
 msgid "red"
 msgstr "قرمز"
 
-#: templates/products/product_detail.html:107
+#: products/templates/products/product_detail.html:107
 msgid "orange"
 msgstr "نارنجی"
 
-#: templates/products/product_detail.html:116
-#| msgid "Details for "
+#: products/templates/products/product_detail.html:116
 msgid "comments for "
 msgstr "نظر برای"
 
-#: templates/products/product_detail.html:147
+#: products/templates/products/product_detail.html:147
 msgid "write your idea here: "
 msgstr "نظر خود را اینجا بنویسید"
 
-#: templates/products/product_list.html:6
+#: products/templates/products/product_list.html:6
 msgid "List of products"
 msgstr "لیستی از محصولات"
 
