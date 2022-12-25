@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-25 12:54+0330\n"
-"PO-Revision-Date: 2022-12-25 12:55+0330\n"
+"POT-Creation-Date: 2022-12-25 14:04+0330\n"
+"PO-Revision-Date: 2022-12-25 14:06+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -31,111 +31,123 @@ msgstr "توضیحات"
 msgid "price"
 msgstr "قیمت"
 
-#: models.py:11 models.py:47
+#: models.py:11 models.py:51
 msgid "active"
 msgstr "فعال"
 
-#: models.py:25
-msgid "Very Bad"
-msgstr "خیلی بد"
-
-#: models.py:26
-msgid "Bad"
-msgstr "بد"
-
-#: models.py:27
-msgid "Normal"
-msgstr "نرمال"
-
-#: models.py:28
-msgid "Good"
-msgstr "خوب"
-
-#: models.py:29
-msgid "Perfect"
-msgstr "عالی"
-
-#: models.py:34
-msgid "author"
-msgstr "نویسنده"
-
-#: models.py:41
-#| msgid "List of products"
+#: models.py:17 models.py:45
 msgid "product"
 msgstr "محصول"
 
-#: models.py:46
+#: models.py:18
+msgid "products"
+msgstr "محصولات"
+
+#: models.py:29
+msgid "Very Bad"
+msgstr "خیلی بد"
+
+#: models.py:30
+msgid "Bad"
+msgstr "بد"
+
+#: models.py:31
+msgid "Normal"
+msgstr "نرمال"
+
+#: models.py:32
+msgid "Good"
+msgstr "خوب"
+
+#: models.py:33
+msgid "Perfect"
+msgstr "عالی"
+
+#: models.py:38
+msgid "author"
+msgstr "نویسنده"
+
+#: models.py:50
 msgid "text"
 msgstr "متن "
 
-#: models.py:48
+#: models.py:52
 msgid "stars"
 msgstr "امتیازها"
 
-#: templates/products/product_detail.html:6
+#: models.py:58
+msgid "comment"
+msgstr "نظرات"
+
+#: models.py:59 templates/products/product_detail.html:82
+msgid "comments"
+msgstr "نظرات"
+
+#: templates/products/product_detail.html:8
 msgid "products_details_page"
 msgstr "صفحه جزئیات محصول"
 
-#: templates/products/product_detail.html:17
+#: templates/products/product_detail.html:19
 msgid "details of product"
 msgstr "جزئیات محصول"
 
-#: templates/products/product_detail.html:44
+#: templates/products/product_detail.html:46
 #: templates/products/product_list.html:70
 msgid "$"
 msgstr "تومان"
 
-#: templates/products/product_detail.html:74
+#: templates/products/product_detail.html:76
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: templates/products/product_detail.html:77
+#: templates/products/product_detail.html:79
 msgid "features"
 msgstr "ویژگی ها"
 
-#: templates/products/product_detail.html:80
-msgid "comments"
-msgstr "نظرات"
-
-#: templates/products/product_detail.html:94
+#: templates/products/product_detail.html:96
 msgid "weight"
 msgstr "وزن"
 
-#: templates/products/product_detail.html:95
+#: templates/products/product_detail.html:97
 msgid "gram"
 msgstr "گرم"
 
-#: templates/products/product_detail.html:98
+#: templates/products/product_detail.html:100
 msgid "size"
 msgstr "سایز"
 
-#: templates/products/product_detail.html:102
+#: templates/products/product_detail.html:104
 msgid "color"
 msgstr "رنگ"
 
-#: templates/products/product_detail.html:104
+#: templates/products/product_detail.html:106
 msgid "black"
 msgstr "مشکی"
 
-#: templates/products/product_detail.html:105
+#: templates/products/product_detail.html:107
 msgid "green"
 msgstr "سبز"
 
-#: templates/products/product_detail.html:106
+#: templates/products/product_detail.html:108
 msgid "red"
 msgstr "قرمز"
 
-#: templates/products/product_detail.html:107
+#: templates/products/product_detail.html:109
 msgid "orange"
 msgstr "نارنجی"
 
-#: templates/products/product_detail.html:116
+#: templates/products/product_detail.html:118
 msgid "comments for "
 msgstr "نظر برای"
 
-#: templates/products/product_detail.html:147
+#: templates/products/product_detail.html:151
 msgid "write your idea here: "
 msgstr "نظر خود را اینجا بنویسید"
+
+#: templates/products/product_detail.html:157
+#| msgid "comment"
+msgid "add comment"
+msgstr "افزودن نظر"
 
 #: templates/products/product_list.html:6
 msgid "List of products"

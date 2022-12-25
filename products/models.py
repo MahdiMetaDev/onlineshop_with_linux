@@ -13,6 +13,10 @@ class Product(models.Model):
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        verbose_name = _("product")
+        verbose_name_plural = _("products")
+
     def __str__(self) -> str:
         return self.title
 
@@ -50,6 +54,9 @@ class Comment(models.Model):
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        verbose_name = _("comment")
+        verbose_name_plural = _("comments")
 
     def __str__(self) -> str:
         return f"{self.product.title}: {self.text}"
