@@ -72,7 +72,7 @@ class Comment(models.Model):
 
 
     def __str__(self) -> str:
-        return f"{self.product.title}: {self.text}"
+        return self.product.title
     
     def get_absolute_url(self):
         return reverse("product_detail", kwargs={"pk": self.product.id})
