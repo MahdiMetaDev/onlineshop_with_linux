@@ -3,6 +3,7 @@
 {% load i18n %}
 {% load static %}
 {% load crispy_forms_tags %}
+{% load comment_tags %}
 
 {% block page_title %}
     {% trans "products_details_page" %}
@@ -117,7 +118,7 @@
                                         <div class="product-reviews">
                                             <h3 class="review__title">{{ product.comments.count }} {% trans "comments for " %} {{ product.title }}</h3>
                                             <ul class="review__list">
-                                                {% for comment in product.comments.all %}
+                                                {% for comment in product.comments.all|only_active_comments %}
                                                     <li class="review__item">
                                                         <div class="review__container">
                                                             <div class="review__text">

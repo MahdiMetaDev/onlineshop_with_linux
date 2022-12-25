@@ -24,6 +24,12 @@ class Product(models.Model):
         return reverse("product_detail", kwargs={"pk": self.pk})
     
 
+class ActiveCommentManager(models.Manager):
+    """ return active comments from database """
+    def get_queryset(self):
+        return super(ActiveCommentManager, self).get_queryset().filter(active=True)
+
+
 class Comment(models.Model):
     PRODUCT_STARS = (
         ("1", _("Very Bad")),
@@ -54,9 +60,16 @@ class Comment(models.Model):
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
 
+
     class Meta:
         verbose_name = _("comment")
         verbose_name_plural = _("comments")
+
+
+    # Managers(default & custom)
+    objects = models.Manager()
+    active_comments_manager = ActiveCommentManager()
+
 
     def __str__(self) -> str:
         return f"{self.product.title}: {self.text}"
