@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-23 21:48+0330\n"
-"PO-Revision-Date: 2022-12-22 17:01+0330\n"
+"POT-Creation-Date: 2022-12-25 15:16+0330\n"
+"PO-Revision-Date: 2022-12-25 15:17+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,18 +19,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: pages/templates/pages/aboutus.html:6
+#: templates/pages/aboutus.html:6
 msgid "about us"
 msgstr "درباره ما"
 
-#: pages/templates/pages/aboutus.html:13
-msgid "Hello my name is "
-msgstr "سلام اسم من هست"
+#: templates/pages/aboutus.html:14
+#, python-format
+msgid ""
+"\n"
+"                        hello my name is %(name)s.\n"
+"                "
+msgstr ""
+"\n"
+"سلام اسم من %(name)s هست."
 
-#: pages/templates/pages/aboutus.html:16
+#: templates/pages/aboutus.html:19
 msgid "This is my email address: "
-msgstr "این ایمیل من است:‌"
+msgstr "این  آدرس ایمیل من است:‌"
 
-#: pages/templates/pages/aboutus.html:21
+#: templates/pages/aboutus.html:24
 msgid "You must login first!"
 msgstr "شما باید اول وارد شوید!"
+
+#, python-format
+#~ msgid "hello my name is %(user.username)s."
+#~ msgstr "سلام اسم من %(user.username)s هست."
