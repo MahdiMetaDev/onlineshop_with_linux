@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-25 15:16+0330\n"
-"PO-Revision-Date: 2022-12-25 15:17+0330\n"
+"POT-Creation-Date: 2022-12-25 17:21+0330\n"
+"PO-Revision-Date: 2022-12-25 17:21+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -23,23 +23,56 @@ msgstr ""
 msgid "about us"
 msgstr "درباره ما"
 
-#: templates/pages/aboutus.html:14
+#: templates/pages/aboutus.html:13
 #, python-format
+#| msgid ""
+#| "\n"
+#| "                    hello my name is %(name)s.\n"
+#| "                "
 msgid ""
 "\n"
-"                        hello my name is %(name)s.\n"
-"                "
+"                hello my name is %(name)s.\n"
+"            "
 msgstr ""
 "\n"
 "سلام اسم من %(name)s هست."
 
 #: templates/pages/aboutus.html:19
-msgid "This is my email address: "
-msgstr "این  آدرس ایمیل من است:‌"
+#, python-format
+#| msgid ""
+#| "\n"
+#| "                    Any question, email me on %(email)s.\n"
+#| "                "
+msgid ""
+"\n"
+"                Any question, email me on %(email)s.\n"
+"            "
+msgstr ""
+"\n"
+"در صورت داشتن هرگونه سوال به آدرس %(email)s پیام دهید."
 
-#: templates/pages/aboutus.html:24
+#: templates/pages/aboutus.html:26
 msgid "You must login first!"
 msgstr "شما باید اول وارد شوید!"
+
+#~ msgid "You must"
+#~ msgstr "شما باید"
+
+#~ msgid "login"
+#~ msgstr "وارد شوید"
+
+#~ msgid "first"
+#~ msgstr "اول"
+
+#, python-format
+#~ msgid ""
+#~ "\" %%}\n"
+#~ "                    please <a href=%(login_link)s>login</a> first.\n"
+#~ "                "
+#~ msgstr "خواهشأ اول <a href=\"%(login_link)s\">وارد</a> شوید."
+
+#~ msgid "This is my email address: "
+#~ msgstr "این  آدرس ایمیل من است:‌"
 
 #, python-format
 #~ msgid "hello my name is %(user.username)s."

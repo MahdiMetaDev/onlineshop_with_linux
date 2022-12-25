@@ -8,23 +8,24 @@
 
 {% block content %}
 
-    <div class="container m-3 p-3">
-        {% if user.is_authenticated %}
-            <h1>
-                {% blocktrans with name=user.username %}
-                        hello my name is {{ name }}.
-                {% endblocktrans %}
-            </h1>
-            <h4>
-                {% trans "This is my email address: " %}{{ user.email }}
-            </h4>
-        {% else %}
-            <h2>
-                <a href="{% url 'account_login' %}">
-                    {% trans "You must login first!" %}
-                </a>
-            </h2>
-        {% endif %}
-    </div>
+    {% if user.is_authenticated %}
+        <h1>
+            {% blocktrans with name=user.username %}
+                hello my name is {{ name }}.
+            {% endblocktrans %}
+        </h1>
+        <br>
+        <h3>
+            {% blocktrans with email=user.email %}
+                Any question, email me on {{ email }}.
+            {% endblocktrans %}
+        </h3>
+    {% else %}
+        <h2>
+            <a href="{% url 'account_login' %}">
+                {% trans "You must login first!" %}
+            </a>
+        </h2>
+    {% endif %}
     
 {% endblock content %}
