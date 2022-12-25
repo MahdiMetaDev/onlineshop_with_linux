@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-24 17:04+0330\n"
-"PO-Revision-Date: 2022-12-24 17:06+0330\n"
+"PO-Revision-Date: 2022-12-25 12:50+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -44,15 +44,21 @@ msgid ""
 "If you requested this email please click on the link below:\n"
 "%(activate_url)s\n"
 msgstr ""
+"\n"
+"از سایت %(site_name)s سلام عرض می کنم.\n"
+"\n"
+"اگه شما این ایمیل را درخواست دادید خواهشاً روی لینک زیر کلیک نمایید:\n"
+"\n"
+"%(activate_url)s\n"
 
 #: templates/account/email/email_confirmation_subject.txt:3
 msgid "Please confirm email"
-msgstr ""
+msgstr "خواهشاً ایمیل را تأیید کنید"
 
 #: templates/account/email_confirm.html:6
 #: templates/account/email_confirm.html:10
 msgid "Confirm E-mail Address"
-msgstr ""
+msgstr "آدرس ایمیل را تأیید کنید"
 
 #: templates/account/email_confirm.html:16
 #, python-format
@@ -60,10 +66,12 @@ msgid ""
 "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
 "address for user %(user_display)s."
 msgstr ""
+"لطفا تأیید کنید که <a href=\"mailto:%(email)s\">%(email)s</a> یک آدرس ایمیل "
+"برای کاربر %(user_display)s می باشد."
 
 #: templates/account/email_confirm.html:20
 msgid "Confirm"
-msgstr ""
+msgstr "تأیید کنید"
 
 #: templates/account/email_confirm.html:27
 #, python-format
@@ -71,6 +79,8 @@ msgid ""
 "This e-mail confirmation link expired or is invalid. Please <a "
 "href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
+"این لینک تأییدیه ایمیل منقضی شده است یا از اعتبار افتاده است. لطفا <a "
+"href=\"%(email_url)s\">درخواست تأیید ایمیل جدید بدهید</a>."
 
 #: templates/account/login.html:7
 msgid "login_page"
