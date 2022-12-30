@@ -1,3 +1,5 @@
+from django.contrib.messages import constants as MESSAGE
+
 from pathlib import Path
 from environs import Env
 import os
@@ -174,3 +176,9 @@ ACCOUNT_UNIQUE_EMAIL = True
 # EMAIL_PORT = 587
 # EMAIL_HOST_USER = env("EMAIL_HOST_USER")
 # EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
+
+
+# Messages framework config 
+MESSAGE_TAGS = {
+    MESSAGE.ERROR: "danger",
+}

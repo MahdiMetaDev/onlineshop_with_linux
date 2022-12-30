@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-25 17:21+0330\n"
-"PO-Revision-Date: 2022-12-25 17:21+0330\n"
+"POT-Creation-Date: 2022-12-30 08:16+0330\n"
+"PO-Revision-Date: 2022-12-30 08:17+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -25,10 +25,6 @@ msgstr "درباره ما"
 
 #: templates/pages/aboutus.html:13
 #, python-format
-#| msgid ""
-#| "\n"
-#| "                    hello my name is %(name)s.\n"
-#| "                "
 msgid ""
 "\n"
 "                hello my name is %(name)s.\n"
@@ -39,10 +35,6 @@ msgstr ""
 
 #: templates/pages/aboutus.html:19
 #, python-format
-#| msgid ""
-#| "\n"
-#| "                    Any question, email me on %(email)s.\n"
-#| "                "
 msgid ""
 "\n"
 "                Any question, email me on %(email)s.\n"
@@ -54,6 +46,10 @@ msgstr ""
 #: templates/pages/aboutus.html:26
 msgid "You must login first!"
 msgstr "شما باید اول وارد شوید!"
+
+#: views.py:11
+msgid "This page is not ready to use!"
+msgstr "این صفحه در حال ساخت است!"
 
 #~ msgid "You must"
 #~ msgstr "شما باید"
