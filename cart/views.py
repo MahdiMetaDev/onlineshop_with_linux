@@ -57,6 +57,14 @@ def remove_from_cart(request, product_id):
     
     cart.remove(product)
 
+    if not cart:
+        messages.error(request, _(
+            "The cart is empty, please go to product list and add your favorite product \
+            to the cart"
+        ))
+    else:
+        messages.warning(request, _("The product removed successfully!"))
+
     return redirect("cart:cart_detail")
 
 
@@ -67,5 +75,10 @@ def clear_the_cart(request):
     cart = Cart(request)
 
     cart.clear()
+
+    messages.error(request, _(
+        "The cart is empty, please go to product list and add your favorite product \
+        to the cart"
+    ))
 
     return redirect("cart:cart_detail")
