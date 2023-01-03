@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils.translation import gettext as _
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 
 from products.models import Product
@@ -24,6 +25,7 @@ def cart_detail_view(request):
     })
 
 
+@require_POST
 def add_to_cart_view(request, product_id):
 
     """ get product and its quantity from request.POST and add it to

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-30 08:00+0330\n"
-"PO-Revision-Date: 2022-12-30 08:01+0330\n"
+"POT-Creation-Date: 2023-01-03 13:25+0330\n"
+"PO-Revision-Date: 2023-01-03 13:27+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -79,7 +79,7 @@ msgstr "امتیازها"
 msgid "comment"
 msgstr "نظرات"
 
-#: models.py:66 templates/products/product_detail.html:83
+#: models.py:66 templates/products/product_detail.html:86
 msgid "comments"
 msgstr "نظرات"
 
@@ -96,55 +96,59 @@ msgstr "جزئیات محصول"
 msgid "$"
 msgstr "تومان"
 
-#: templates/products/product_detail.html:77
+#: templates/products/product_detail.html:59
+msgid "Add to cart"
+msgstr "اضافه به سبد خرید"
+
+#: templates/products/product_detail.html:80
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: templates/products/product_detail.html:80
+#: templates/products/product_detail.html:83
 msgid "features"
 msgstr "ویژگی ها"
 
-#: templates/products/product_detail.html:97
+#: templates/products/product_detail.html:100
 msgid "weight"
 msgstr "وزن"
 
-#: templates/products/product_detail.html:98
+#: templates/products/product_detail.html:101
 msgid "gram"
 msgstr "گرم"
 
-#: templates/products/product_detail.html:101
+#: templates/products/product_detail.html:104
 msgid "size"
 msgstr "سایز"
 
-#: templates/products/product_detail.html:105
+#: templates/products/product_detail.html:108
 msgid "color"
 msgstr "رنگ"
 
-#: templates/products/product_detail.html:107
+#: templates/products/product_detail.html:110
 msgid "black"
 msgstr "مشکی"
 
-#: templates/products/product_detail.html:108
+#: templates/products/product_detail.html:111
 msgid "green"
 msgstr "سبز"
 
-#: templates/products/product_detail.html:109
+#: templates/products/product_detail.html:112
 msgid "red"
 msgstr "قرمز"
 
-#: templates/products/product_detail.html:110
+#: templates/products/product_detail.html:113
 msgid "orange"
 msgstr "نارنجی"
 
-#: templates/products/product_detail.html:119
+#: templates/products/product_detail.html:122
 msgid "comments for "
 msgstr "نظر برای"
 
-#: templates/products/product_detail.html:152
+#: templates/products/product_detail.html:155
 msgid "write your idea here: "
 msgstr "نظر خود را اینجا بنویسید"
 
-#: templates/products/product_detail.html:158
+#: templates/products/product_detail.html:161
 msgid "add comment"
 msgstr "افزودن نظر"
 
