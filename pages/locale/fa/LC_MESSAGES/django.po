@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-30 08:16+0330\n"
+"POT-Creation-Date: 2023-01-03 13:59+0330\n"
 "PO-Revision-Date: 2022-12-30 08:17+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: templates/pages/aboutus.html:6
+#: pages/templates/pages/aboutus.html:6
 msgid "about us"
 msgstr "درباره ما"
 
-#: templates/pages/aboutus.html:13
+#: pages/templates/pages/aboutus.html:13
 #, python-format
 msgid ""
 "\n"
@@ -33,7 +33,7 @@ msgstr ""
 "\n"
 "سلام اسم من %(name)s هست."
 
-#: templates/pages/aboutus.html:19
+#: pages/templates/pages/aboutus.html:19
 #, python-format
 msgid ""
 "\n"
@@ -43,11 +43,11 @@ msgstr ""
 "\n"
 "در صورت داشتن هرگونه سوال به آدرس %(email)s پیام دهید."
 
-#: templates/pages/aboutus.html:26
+#: pages/templates/pages/aboutus.html:26
 msgid "You must login first!"
 msgstr "شما باید اول وارد شوید!"
 
-#: views.py:11
+#: pages/views.py:11 pages/views.py:19
 msgid "This page is not ready to use!"
 msgstr "این صفحه در حال ساخت است!"
 

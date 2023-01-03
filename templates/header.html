@@ -1,0 +1,154 @@
+
+{% load i18n %}
+{% load static %}
+
+<!-- Header Start -->
+<header class="header">
+    <div class="header-inner fixed-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div
+                    class="col-xl-9 col-lg-8 col-5 col-xs-0 col-none col-sm-block p-0"
+                >
+                    <nav class="main-navigation">
+                        <div class="site-branding" style="margin-right: 30px">
+                            <a href="{% url 'product_list' %}" class="logo">
+                                <figure class="logo--normal d-none d-sm-block">
+                                    <img
+                                        class="px-5"
+                                        src="{% static 'img/codingyar_logo.png' %}"
+                                        style="
+                                            max-height: 50px;
+                                            margin-bottom: -15px;
+                                        "
+                                        alt="Logo"
+                                    />
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="mainmenu-nav d-none d-lg-block w-100 pr-3">
+                            <ul
+                                class="mainmenu d-lg-flex jusity-content-end jusity-content-lg-start pt-4"
+                            >
+                                <li
+                                    class="mainmenu__item menu-item-has-children active"
+                                >
+                                    <a
+                                        href="{% url 'home' %}"
+                                        class="mainmenu__link"
+                                    >
+                                        <span class="mm-text"
+                                            >{% trans "home" %}</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="mainmenu__item menu-item-has-children"
+                                >
+                                    <a href="Blog.html" class="mainmenu__link">
+                                        <span class="mm-text"
+                                            >{% trans "blog" %}</span
+                                        >
+                                    </a>
+                                </li>
+                                <li
+                                    class="mainmenu__item menu-item-has-children"
+                                >
+                                    <a
+                                        href="{% url 'aboutus' %}"
+                                        class="mainmenu__link"
+                                    >
+                                        <span class="mm-text"
+                                            >{% trans "about us" %}</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="mainmenu__item">
+                                    <a
+                                        href="contact-us.html"
+                                        class="mainmenu__link"
+                                    >
+                                        <span class="mm-text"
+                                            >{% trans "contact us" %}</span
+                                        >
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-7 col-12 p-0">
+                    <ul class="header-toolbar">
+                        <li class="header-toolbar__item">
+                            <a
+                                href="wishlist.html"
+                                class="header-toolbar__btn mx-4"
+                            >
+                                <i class="flaticon flaticon-like"></i>
+                            </a>
+                        </li>
+                        <li class="header-toolbar__item mini-cart-item">
+                            <a
+                                href="#miniCart"
+                                class="header-toolbar__btn toolbar-btn mini-cart-btn"
+                            >
+                                <i class="flaticon flaticon-shopping-cart"></i>
+                                <sup class="mini-cart-count"
+                                    >{{ cart|length }}</sup
+                                >
+                            </a>
+                        </li>
+                        <li class="header-toolbar__item user-info">
+                            <a
+                                href="my-account.html"
+                                class="header-toolbar__btn"
+                            >
+                                <i class="flaticon flaticon-user"></i>
+                            </a>
+                            <ul class="user-info-menu">
+                                {% if user.is_authenticated %}
+                                <li>
+                                    <a
+                                        class="text-right"
+                                        href="{% url 'account_logout' %}"
+                                        >{% trans "logout" %}</a
+                                    >
+                                </li>
+                                {% else %}
+                                <li>
+                                    <a
+                                        class="text-right"
+                                        href="{% url 'account_login' %}"
+                                        >{% trans "login" %}</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="text-right"
+                                        href="{% url 'account_signup' %}"
+                                        >{% trans "signup" %}</a
+                                    >
+                                </li>
+                                {% endif %}
+                            </ul>
+                        </li>
+                        <li class="header-toolbar__item">
+                            <a
+                                href="#searchForm"
+                                class="header-toolbar__btn toolbar-btn"
+                            >
+                                <i class="flaticon flaticon-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header End -->

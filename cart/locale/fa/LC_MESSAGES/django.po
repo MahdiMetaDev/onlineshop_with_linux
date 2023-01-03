@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-31 20:45+0330\n"
-"PO-Revision-Date: 2022-12-31 20:48+0330\n"
+"POT-Creation-Date: 2023-01-03 16:09+0330\n"
+"PO-Revision-Date: 2023-01-03 16:10+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,24 +19,44 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: templates/cart/cart_detail.html:7
+#: cart/templates/cart/cart_detail.html:7
 msgid "cart_detail_page"
 msgstr "صفحه سبد خرید"
 
-#: templates/cart/cart_detail.html:67 templates/cart/cart_detail.html:89
-#: templates/cart/cart_detail.html:118 templates/cart/cart_detail.html:127
+#: cart/templates/cart/cart_detail.html:67
+#: cart/templates/cart/cart_detail.html:89
+#: cart/templates/cart/cart_detail.html:118
+#: cart/templates/cart/cart_detail.html:127
+#: cart/templates/cart/cart_sidebar.html:37
+#: cart/templates/cart/cart_sidebar.html:49
 msgid "$"
 msgstr "تومان"
 
-#: templates/cart/cart_detail.html:103
+#: cart/templates/cart/cart_detail.html:103
 msgid "Empty the cart"
 msgstr "خالی کردن سبد خرید"
 
-#: views.py:45
+#: cart/templates/cart/cart_sidebar.html:12
+msgid "cart"
+msgstr "سبد خرید"
+
+#: cart/templates/cart/cart_sidebar.html:47
+msgid "total_price"
+msgstr "جمع کل"
+
+#: cart/templates/cart/cart_sidebar.html:56
+msgid "go to cart"
+msgstr "مشاهده سبد خرید"
+
+#: cart/templates/cart/cart_sidebar.html:61
+msgid "payment"
+msgstr "سفارش"
+
+#: cart/views.py:47
 msgid "The product added to cart successfully!"
 msgstr "محصول با موفقیت به سبد خرید اضافه شد!"
 
-#: views.py:62
+#: cart/views.py:64
 msgid ""
 "The cart is empty, please go to product list and add your favorite product"
 "             to the cart"
@@ -44,12 +64,11 @@ msgstr ""
 "سبد خرید خالی است . لطفاً به لیست محصولات رفته و محصول مورد نظر خود را به "
 "سبد خرید اضافه کنید."
 
-#: views.py:66
-#| msgid "The product added to cart successfully!"
+#: cart/views.py:68
 msgid "The product removed successfully!"
 msgstr "محصول با موفقیت حذف شد."
 
-#: views.py:80
+#: cart/views.py:82
 msgid ""
 "The cart is empty, please go to product list and add your favorite product"
 "         to the cart"

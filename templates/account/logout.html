@@ -11,6 +11,6 @@
     <h2>{% trans "Are you sure you want to logout?" %}</h2>
     <form action="" method="post">
         {% csrf_token %}
-        <input class="btn btn-danger" type="submit" value="{% trans "Yes I am sure." %}">        
+        <input class="btn btn-small btn-bg-red btn-color-white btn-hover-2" type="submit" value="{% trans "Yes I am sure." %}">        
     </form>
 {% endblock content %}

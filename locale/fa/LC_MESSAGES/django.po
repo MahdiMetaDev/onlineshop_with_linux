@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-24 17:04+0330\n"
-"PO-Revision-Date: 2022-12-25 12:50+0330\n"
+"POT-Creation-Date: 2023-01-03 16:09+0330\n"
+"PO-Revision-Date: 2023-01-03 16:10+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,22 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
-
-#: templates/_base.html:66 templates/home.html:6
-msgid "home"
-msgstr "خانه"
-
-#: templates/_base.html:71
-msgid "blog"
-msgstr "بلاگ"
-
-#: templates/_base.html:76
-msgid "about us"
-msgstr "درباره ما"
-
-#: templates/_base.html:81
-msgid "contact us"
-msgstr "تماس با ما"
 
 #: templates/account/email/email_confirmation_message.txt:8
 #, python-format
@@ -90,7 +74,7 @@ msgstr "صفحه ورود"
 msgid "Login"
 msgstr "وارد شو"
 
-#: templates/account/login.html:17
+#: templates/account/login.html:17 templates/header.html:122
 msgid "login"
 msgstr "ورود"
 
@@ -118,9 +102,37 @@ msgstr "صفحه ثبت نام "
 msgid "Signup"
 msgstr "ثبت نام کن"
 
-#: templates/account/signup.html:17
+#: templates/account/signup.html:17 templates/header.html:129
 msgid "signup"
 msgstr "ثبت نام"
+
+#: templates/footer.html:21 templates/header.html:62
+msgid "about us"
+msgstr "درباره ما"
+
+#: templates/footer.html:22
+msgid "rights"
+msgstr "قوانین و مقررات"
+
+#: templates/footer.html:23
+msgid "call us"
+msgstr "تماس با ما"
+
+#: templates/header.html:41 templates/home.html:6
+msgid "home"
+msgstr "خانه"
+
+#: templates/header.html:50
+msgid "blog"
+msgstr "بلاگ"
+
+#: templates/header.html:72
+msgid "contact us"
+msgstr "تماس با ما"
+
+#: templates/header.html:114
+msgid "logout"
+msgstr "خروج"
 
 #: templates/home.html:12
 msgid "welcome"
@@ -129,6 +141,9 @@ msgstr "خوش آمدید"
 #: templates/home.html:14
 msgid "please login first."
 msgstr "لطفا وارد شوید"
+
+#~ msgid "cart"
+#~ msgstr "سبد خرید"
 
 #~ msgid "Are you sure?"
 #~ msgstr "آیا مطمئن هستید؟"
