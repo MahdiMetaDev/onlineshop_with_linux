@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.messages", # required for allauth
     "django.contrib.staticfiles",
     "django.contrib.sites", # (new) -> required for allauth
+    "django.contrib.humanize", # (new) -> required for intcomma template filter
 
     # third party apps
     "jalali_date",

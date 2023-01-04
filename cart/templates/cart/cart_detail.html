@@ -2,6 +2,9 @@
 
 {% load i18n %}
 {% load static %}
+{% load humanize %}
+
+{% load translation_tags %}
 
 {% block page_title %}
     {% trans "cart_detail_page" %}
@@ -17,7 +20,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="d-flex justify-content-between align-items-center flex-sm-row flex-column">
-                            <h1 class="page-title">سبد خرید</h1>
+                            <h1 class="page-title">{% trans "cart" %}</h1>
                         </div>
                     </div>
                 </div>
@@ -68,7 +71,7 @@
                                                             </td>
                                                             <td class="product-price">
                                                                 <span class="product-price-wrapper">
-                                                                    <span class="money">{{ item.product_obj.price }} {% trans "$" %}</span>
+                                                                    <span class="money">{{ item.product_obj.price|intcomma:False|number_translate }} {% trans "$" %}</span>
                                                                 </span>
                                                             </td>
                                                             <td class="product-quantity">
@@ -90,7 +93,7 @@
                                                             </td>
                                                             <td class="product-total-price">
                                                                 <span class="product-price-wrapper">
-                                                                    <span class="money">{{ item.total_price }} {% trans "$" %}</span>
+                                                                    <span class="money">{{ item.total_price|intcomma:False|number_translate }} {% trans "$" %}</span>
                                                                 </span>
                                                             </td>
                                                         </tr>
@@ -119,7 +122,7 @@
                                                     <span>مجموع</span>
                                                 </div>
                                                 <div class="cart-calculator__item--value">
-                                                    <span>{{ cart.get_total_price }} {% trans "$" %}</span>
+                                                    <span>{{ cart.get_total_price|intcomma:False|number_translate }} {% trans "$" %}</span>
                                                 </div>
                                             </div>
                                             <div class="cart-calculator__item order-total">
@@ -128,7 +131,7 @@
                                                 </div>
                                                 <div class="cart-calculator__item--value">
                                                     <span class="product-price-wrapper">
-                                                        <span class="money">{{ cart.get_total_price }} {% trans "$" %}</span>
+                                                        <span class="money">{{ cart.get_total_price|intcomma:False|number_translate }} {% trans "$" %}</span>
                                                     </span>
                                                 </div>
                                             </div>

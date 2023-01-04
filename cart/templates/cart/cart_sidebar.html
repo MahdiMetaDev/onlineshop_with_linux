@@ -1,6 +1,9 @@
 
 {% load i18n %}
 {% load static %}
+{% load humanize %}
+
+{% load translation_tags %}
 
 
 <!-- Mini Cart Start -->
@@ -34,10 +37,10 @@
                             </span>
                             <span class="mini-cart__product__quantity">
                                 <span
-                                    >{{ item.product_obj.price }} {% trans "$" %}</span
+                                    >{{ item.product_obj.price|intcomma:False|number_translate }} {% trans "$" %}</span
                                 >
                                 &#215;
-                                <span>{{ item.quantity }}</span>
+                                <span>{{ item.quantity|intcomma:False|number_translate }}</span>
                             </span>
                         </div>
                     </li>
@@ -46,7 +49,7 @@
                 <div class="mini-cart__total">
                     <span>{% trans "total_price" %}</span>
                     <span class="ammount"
-                        >{{ cart.get_total_price }} {% trans "$" %}</span
+                        >{{ cart.get_total_price|intcomma:False|number_translate }} {% trans "$" %}</span
                     >
                 </div>
                 <div class="mini-cart__buttons">

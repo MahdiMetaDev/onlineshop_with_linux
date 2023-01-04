@@ -1,6 +1,9 @@
 
 {% load i18n %}
 {% load static %}
+{% load humanize %}
+
+{% load translation_tags %}
 
 <!-- Header Start -->
 <header class="header">
@@ -94,7 +97,7 @@
                             >
                                 <i class="flaticon flaticon-shopping-cart"></i>
                                 <sup class="mini-cart-count"
-                                    >{{ cart|length }}</sup
+                                    >{{ cart|length|intcomma:False|number_translate }}</sup
                                 >
                             </a>
                         </li>
