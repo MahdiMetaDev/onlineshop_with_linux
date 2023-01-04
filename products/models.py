@@ -2,6 +2,7 @@ from django.db import models
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth import get_user_model
+from django.utils import timezone
 
 
 class Product(models.Model):
@@ -11,7 +12,7 @@ class Product(models.Model):
     active = models.BooleanField(_("active"), default=True)
     cover = models.ImageField(_("product image"), upload_to="covers/products/", blank=True)
 
-    datetime_created = models.DateTimeField(auto_now_add=True)
+    datetime_created = models.DateTimeField(_("Time created"), default=timezone.now)
     datetime_modified = models.DateTimeField(auto_now=True)
 
     class Meta:
