@@ -4,6 +4,9 @@ from pathlib import Path
 from environs import Env
 import os
 
+# for jalali-date
+import locale
+
 # Environment variables config
 env = Env()
 env.read_env() # read .env files into os.environ
@@ -188,4 +191,13 @@ ACCOUNT_UNIQUE_EMAIL = True
 # Messages framework config 
 MESSAGE_TAGS = {
     MESSAGE.ERROR: "danger",
+}
+
+# django-jalali-date config
+locale.setlocale(locale.LC_ALL, "fa_IR.UTF-8")
+
+JALALI_DATE_DEFAULTS = {
+    "Strftime": {
+        "date": "%d/%m/%y",
+    },
 }

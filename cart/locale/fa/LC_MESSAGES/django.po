@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-03 16:09+0330\n"
+"POT-Creation-Date: 2023-01-04 07:52+0330\n"
 "PO-Revision-Date: 2023-01-03 16:10+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,16 +23,16 @@ msgstr ""
 msgid "cart_detail_page"
 msgstr "صفحه سبد خرید"
 
-#: cart/templates/cart/cart_detail.html:67
-#: cart/templates/cart/cart_detail.html:89
-#: cart/templates/cart/cart_detail.html:118
-#: cart/templates/cart/cart_detail.html:127
+#: cart/templates/cart/cart_detail.html:71
+#: cart/templates/cart/cart_detail.html:93
+#: cart/templates/cart/cart_detail.html:122
+#: cart/templates/cart/cart_detail.html:131
 #: cart/templates/cart/cart_sidebar.html:37
 #: cart/templates/cart/cart_sidebar.html:49
 msgid "$"
 msgstr "تومان"
 
-#: cart/templates/cart/cart_detail.html:103
+#: cart/templates/cart/cart_detail.html:107
 msgid "Empty the cart"
 msgstr "خالی کردن سبد خرید"
 
@@ -58,11 +58,11 @@ msgstr "محصول با موفقیت به سبد خرید اضافه شد!"
 
 #: cart/views.py:64
 msgid ""
-"The cart is empty, please go to product list and add your favorite product"
-"             to the cart"
+"The cart is empty, please go to product list and add your favorite "
+"product             to the cart"
 msgstr ""
-"سبد خرید خالی است . لطفاً به لیست محصولات رفته و محصول مورد نظر خود را به "
-"سبد خرید اضافه کنید."
+"سبد خرید خالی است . لطفاً به لیست محصولات رفته و محصول مورد نظر خود را به سبد "
+"خرید اضافه کنید."
 
 #: cart/views.py:68
 msgid "The product removed successfully!"
@@ -70,8 +70,8 @@ msgstr "محصول با موفقیت حذف شد."
 
 #: cart/views.py:82
 msgid ""
-"The cart is empty, please go to product list and add your favorite product"
-"         to the cart"
+"The cart is empty, please go to product list and add your favorite "
+"product         to the cart"
 msgstr ""
-"سبد خرید خالی است . لطفاً به لیست محصولات رفته و محصول مورد نظر خود را به "
-"سبد خرید اضافه کنید."
+"سبد خرید خالی است . لطفاً به لیست محصولات رفته و محصول مورد نظر خود را به سبد "
+"خرید اضافه کنید."
