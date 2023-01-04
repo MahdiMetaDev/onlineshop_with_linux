@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     "django.contrib.sites", # (new) -> required for allauth
 
     # third party apps
+    "jalali_date",
     "rosetta",
     "crispy_forms",
     "allauth",
