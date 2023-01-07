@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     "allauth",
     "allauth.account",
-    
+    "ckeditor",  # Rich Text Editor
 
     # local apps
     "accounts",
@@ -142,6 +142,7 @@ LOCALE_PATHS = (
 
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"), ]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles") # required for ckeditor
 
 # Media files config
 
