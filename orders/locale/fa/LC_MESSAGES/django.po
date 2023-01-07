@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-07 20:57+0330\n"
-"PO-Revision-Date: 2023-01-07 20:59+0330\n"
+"POT-Creation-Date: 2023-01-07 21:48+0330\n"
+"PO-Revision-Date: 2023-01-07 21:49+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,12 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: forms.py:16
-msgid "if you have any notes please enter here otherwise leave it empty"
-msgstr ""
-"اگر یادداشتی دارید در اینجا وارد کنید. در غیر این صورت این مکان را خالی "
-"بگذارید."
-
 #: models.py:14
 msgid "user"
 msgstr "کاربر"
@@ -33,11 +27,11 @@ msgstr "کاربر"
 msgid "paid"
 msgstr "وضعیت پرداخت"
 
-#: models.py:19
+#: models.py:19 templates/orders/order_create.html:48
 msgid "name"
 msgstr "نام"
 
-#: models.py:20
+#: models.py:20 templates/orders/order_create.html:52
 msgid "family_name"
 msgstr "نام خانوادگی"
 
@@ -45,7 +39,7 @@ msgstr "نام خانوادگی"
 msgid "Phone_number"
 msgstr "تلفن همراه"
 
-#: models.py:22
+#: models.py:22 templates/orders/order_create.html:58
 msgid "address"
 msgstr "آدرس"
 
@@ -90,16 +84,35 @@ msgid "orderitems"
 msgstr "آیتم های سفارش"
 
 #: templates/orders/order_create.html:10
-#| msgid "order_notes"
 msgid "order_page"
 msgstr "صفحه سفارش"
 
 #: templates/orders/order_create.html:41
-#| msgid "order_datetime"
 msgid "order details"
 msgstr "جزئیات سفارش"
 
+#: templates/orders/order_create.html:64
+msgid "phone_number"
+msgstr "تلفن همراه"
+
+#: templates/orders/order_create.html:70
+msgid "your notes"
+msgstr "یادداشت های شما"
+
+#: templates/orders/order_create.html:71
+msgid "write your notes here ..."
+msgstr "یادداشت های خودتان را اینجا بنویسید ..."
+
+#: templates/orders/order_create.html:74
+msgid "pay"
+msgstr "پرداخت"
+
+#: templates/orders/order_create.html:99
 #: templates/orders/order_create.html:108
-#: templates/orders/order_create.html:117
 msgid "$"
 msgstr "تومان"
+
+#~ msgid "if you have any notes please enter here otherwise leave it empty"
+#~ msgstr ""
+#~ "اگر یادداشتی دارید در اینجا وارد کنید. در غیر این صورت این مکان را خالی "
+#~ "بگذارید."

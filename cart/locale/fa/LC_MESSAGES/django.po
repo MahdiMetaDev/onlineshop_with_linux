@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-04 07:52+0330\n"
+"POT-Creation-Date: 2023-01-07 21:43+0330\n"
 "PO-Revision-Date: 2023-01-03 16:10+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,36 +19,37 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: cart/templates/cart/cart_detail.html:7
+#: cart/templates/cart/cart_detail.html:10
 msgid "cart_detail_page"
 msgstr "صفحه سبد خرید"
 
-#: cart/templates/cart/cart_detail.html:71
-#: cart/templates/cart/cart_detail.html:93
-#: cart/templates/cart/cart_detail.html:122
-#: cart/templates/cart/cart_detail.html:131
-#: cart/templates/cart/cart_sidebar.html:37
-#: cart/templates/cart/cart_sidebar.html:49
-msgid "$"
-msgstr "تومان"
-
-#: cart/templates/cart/cart_detail.html:107
-msgid "Empty the cart"
-msgstr "خالی کردن سبد خرید"
-
-#: cart/templates/cart/cart_sidebar.html:12
+#: cart/templates/cart/cart_detail.html:23
+#: cart/templates/cart/cart_sidebar.html:15
 msgid "cart"
 msgstr "سبد خرید"
 
-#: cart/templates/cart/cart_sidebar.html:47
+#: cart/templates/cart/cart_detail.html:74
+#: cart/templates/cart/cart_detail.html:96
+#: cart/templates/cart/cart_detail.html:125
+#: cart/templates/cart/cart_detail.html:134
+#: cart/templates/cart/cart_sidebar.html:49
+#: cart/templates/cart/cart_sidebar.html:61
+msgid "$"
+msgstr "تومان"
+
+#: cart/templates/cart/cart_detail.html:110
+msgid "Empty the cart"
+msgstr "خالی کردن سبد خرید"
+
+#: cart/templates/cart/cart_sidebar.html:59
 msgid "total_price"
 msgstr "جمع کل"
 
-#: cart/templates/cart/cart_sidebar.html:56
+#: cart/templates/cart/cart_sidebar.html:68
 msgid "go to cart"
 msgstr "مشاهده سبد خرید"
 
-#: cart/templates/cart/cart_sidebar.html:61
+#: cart/templates/cart/cart_sidebar.html:73
 msgid "payment"
 msgstr "سفارش"
 

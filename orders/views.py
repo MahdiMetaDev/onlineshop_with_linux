@@ -9,6 +9,8 @@ def order_create_view(request):
 
     """ Users who have logged in can submit for the OrderForm """
 
+    order_form = OrderForm()
+
     if request.method == "POST":
         order_form = OrderForm(request.POST)
 
@@ -17,4 +19,6 @@ def order_create_view(request):
             order_obj.user = request.user
             order_obj.save()
 
-    return render(request, "orders/order_create.html", )
+    return render(request, "orders/order_create.html", context={
+        "form": order_form,
+    })

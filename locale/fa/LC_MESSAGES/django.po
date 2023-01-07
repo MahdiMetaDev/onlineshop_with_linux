@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-03 16:09+0330\n"
+"POT-Creation-Date: 2023-01-07 21:43+0330\n"
 "PO-Revision-Date: 2023-01-03 16:10+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,7 +74,7 @@ msgstr "صفحه ورود"
 msgid "Login"
 msgstr "وارد شو"
 
-#: templates/account/login.html:17 templates/header.html:122
+#: templates/account/login.html:17 templates/header.html:125
 msgid "login"
 msgstr "ورود"
 
@@ -102,11 +102,11 @@ msgstr "صفحه ثبت نام "
 msgid "Signup"
 msgstr "ثبت نام کن"
 
-#: templates/account/signup.html:17 templates/header.html:129
+#: templates/account/signup.html:17 templates/header.html:132
 msgid "signup"
 msgstr "ثبت نام"
 
-#: templates/footer.html:21 templates/header.html:62
+#: templates/footer.html:21 templates/header.html:65
 msgid "about us"
 msgstr "درباره ما"
 
@@ -118,19 +118,19 @@ msgstr "قوانین و مقررات"
 msgid "call us"
 msgstr "تماس با ما"
 
-#: templates/header.html:41 templates/home.html:6
+#: templates/header.html:44 templates/home.html:6
 msgid "home"
 msgstr "خانه"
 
-#: templates/header.html:50
+#: templates/header.html:53
 msgid "blog"
 msgstr "بلاگ"
 
-#: templates/header.html:72
+#: templates/header.html:75
 msgid "contact us"
 msgstr "تماس با ما"
 
-#: templates/header.html:114
+#: templates/header.html:117
 msgid "logout"
 msgstr "خروج"
 
