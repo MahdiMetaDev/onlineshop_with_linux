@@ -23,8 +23,8 @@ class Order(models.Model):
 
     order_notes = models.TextField(_("order_notes"), blank=True)
 
-    datetime_created = models.DateTimeField(auto_now_add=True)
-    datetime_modified = models.DateTimeField(auto_now=True)
+    datetime_created = models.DateTimeField(_("order_datetime"), auto_now_add=True)
+    datetime_modified = models.DateTimeField(_("checkout_datetime"), auto_now=True)
 
     class Meta:
         verbose_name = _("order")
@@ -59,6 +59,7 @@ class OrderItem(models.Model):
     price = models.PositiveIntegerField(_("price"))
 
     class Meta:
+        verbose_name = _("orderitem")
         verbose_name_plural = _("orderitems")
 
     def __str__(self):
