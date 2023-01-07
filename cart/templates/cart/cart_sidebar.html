@@ -21,12 +21,23 @@
                         class="mini-cart__product d-flex justify-content-between"
                     >
                         <div class="mini-cart__product__image">
-                            <a href="#">
-                                <img
-                                    src="{% static 'img/products/prod-1-100x100.jpg' %}"
-                                    alt="products"
-                                />
-                            </a>
+                            {% for item in cart %}
+                                {% if item.product_obj.cover %}
+                                    <a href="{% url 'product_detail' item.product_obj.id %}">
+                                        <img
+                                            src="{{ item.product_obj.cover.url }}"
+                                            alt="products"
+                                        />
+                                    </a>
+                                {% else %}
+                                    <a href="{% url 'product_detail' item.product_obj.id %}">
+                                        <img
+                                            src="{% static 'img/products/prod-1-100x100.jpg' %}"
+                                            alt="products"
+                                        />
+                                    </a>
+                                {% endif %}
+                            {% endfor %}
                         </div>
                         <div class="mini-cart__product__content pt-2">
                             <span

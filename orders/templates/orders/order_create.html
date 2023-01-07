@@ -1,7 +1,10 @@
 {% extends '_base.html' %}
 
 {% load i18n %}
+{% load humanize %}
+
 {% load crispy_forms_tags %}
+{% load translation_tags %}
 
 {% block page_title %}
     {% trans "order_page" %}
@@ -90,23 +93,24 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <th>محصول شماره یک
-                                                    <strong><span>&#10005;</span>۲</strong>
-                                                </th>
-                                                <td class="text-right">۲۹۶,۰۰۰ تومان</td>
-                                            </tr>
-                                            <tr>
-                                                <th>محصول شماره دو
-                                                    <strong><span>&#10005;</span>۱</strong>
-                                                </th>
-                                                <td class="text-right">۵۸,۰۰۰ تومان</td>
-                                            </tr>
+                                            {% for item in cart %}
+                                                <tr>
+                                                    <th>
+                                                        {{ item.product_obj.title }}
+                                                        <strong><span>&#10005;</span>{{ item.quantity|number_translate }}</strong>
+                                                    </th>
+                                                    <td class="text-right">
+                                                        {{ item.total_price|intcomma:False|number_translate }} {% trans "$" %}
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
                                         </tbody>
                                         <tfoot>
                                             <tr class="cart-subtotal">
                                                 <th>مجموع</th>
-                                                <td class="text-right">۳۴۸,۰۰۰ تومان</td>
+                                                <td class="text-right">
+                                                    {{ cart.get_total_price|intcomma:False|number_translate }} {% trans "$" %}
+                                                </td>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -130,6 +134,8 @@
             </div>
         </div>
         <!-- Main Content Wrapper Start -->
+
+        {% include "cart/cart_sidebar.html" %}
 
     </div>
     <!-- Main Wrapper End -->
