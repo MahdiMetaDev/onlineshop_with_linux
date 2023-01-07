@@ -11,6 +11,7 @@ class Product(models.Model):
     title = models.CharField(_("title"), max_length=100)
     # description = models.TextField(_("description"))
     description = RichTextField(verbose_name=_("description"))
+    short_description = models.CharField(_("short_description"), max_length=300, blank=True)
     price = models.PositiveIntegerField(_("price"), default=0)
     active = models.BooleanField(_("active"), default=True)
     cover = models.ImageField(_("product image"), upload_to="covers/products/", blank=True)
