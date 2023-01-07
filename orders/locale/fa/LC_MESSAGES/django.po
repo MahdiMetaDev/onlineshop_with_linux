@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-07 17:34+0330\n"
-"PO-Revision-Date: 2023-01-07 17:36+0330\n"
+"POT-Creation-Date: 2023-01-07 20:57+0330\n"
+"PO-Revision-Date: 2023-01-07 20:59+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,6 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: forms.py:16
+msgid "if you have any notes please enter here otherwise leave it empty"
+msgstr ""
+"اگر یادداشتی دارید در اینجا وارد کنید. در غیر این صورت این مکان را خالی "
+"بگذارید."
 
 #: models.py:14
 msgid "user"
@@ -48,7 +54,6 @@ msgid "order_notes"
 msgstr "یادداشت ها"
 
 #: models.py:26
-#| msgid "orderitems"
 msgid "order_datetime"
 msgstr "تاریخ سفارش"
 
@@ -56,7 +61,7 @@ msgstr "تاریخ سفارش"
 msgid "checkout_datetime"
 msgstr "تاریخ پرداخت"
 
-#: models.py:30 models.py:46
+#: models.py:30 models.py:46 templates/orders/order_create.html:24
 msgid "order"
 msgstr "سفارش"
 
@@ -77,10 +82,24 @@ msgid "price"
 msgstr "قیمت"
 
 #: models.py:62
-#| msgid "orderitems"
 msgid "orderitem"
 msgstr "آیتم سفارش"
 
 #: models.py:63
 msgid "orderitems"
 msgstr "آیتم های سفارش"
+
+#: templates/orders/order_create.html:10
+#| msgid "order_notes"
+msgid "order_page"
+msgstr "صفحه سفارش"
+
+#: templates/orders/order_create.html:41
+#| msgid "order_datetime"
+msgid "order details"
+msgstr "جزئیات سفارش"
+
+#: templates/orders/order_create.html:108
+#: templates/orders/order_create.html:117
+msgid "$"
+msgstr "تومان"
