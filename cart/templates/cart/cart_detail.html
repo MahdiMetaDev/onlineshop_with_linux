@@ -142,6 +142,10 @@
                                     </a>
                                 </div>
                             </div>
+                        {% else %}
+                            <a href="{% url 'product_list' %}" class="btn btn-small btn-bg-sand">
+                                {% trans "product list" %}
+                            </a>
                         {% endif %}
                     </div>
                 </div>
