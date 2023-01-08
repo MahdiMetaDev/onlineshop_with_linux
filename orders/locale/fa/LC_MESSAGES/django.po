@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-07 21:48+0330\n"
-"PO-Revision-Date: 2023-01-07 21:49+0330\n"
+"POT-Creation-Date: 2023-01-08 11:57+0330\n"
+"PO-Revision-Date: 2023-01-08 11:59+0330\n"
 "Last-Translator: mahdi malekifard <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -31,7 +31,7 @@ msgstr "وضعیت پرداخت"
 msgid "name"
 msgstr "نام"
 
-#: models.py:20 templates/orders/order_create.html:52
+#: models.py:20 templates/orders/order_create.html:57
 msgid "family_name"
 msgstr "نام خانوادگی"
 
@@ -39,7 +39,7 @@ msgstr "نام خانوادگی"
 msgid "Phone_number"
 msgstr "تلفن همراه"
 
-#: models.py:22 templates/orders/order_create.html:58
+#: models.py:22 templates/orders/order_create.html:68
 msgid "address"
 msgstr "آدرس"
 
@@ -91,26 +91,35 @@ msgstr "صفحه سفارش"
 msgid "order details"
 msgstr "جزئیات سفارش"
 
-#: templates/orders/order_create.html:64
+#: templates/orders/order_create.html:79
 msgid "phone_number"
 msgstr "تلفن همراه"
 
-#: templates/orders/order_create.html:70
+#: templates/orders/order_create.html:90
 msgid "your notes"
 msgstr "یادداشت های شما"
 
-#: templates/orders/order_create.html:71
+#: templates/orders/order_create.html:91
 msgid "write your notes here ..."
 msgstr "یادداشت های خودتان را اینجا بنویسید ..."
 
-#: templates/orders/order_create.html:74
+#: templates/orders/order_create.html:94
 msgid "pay"
 msgstr "پرداخت"
 
-#: templates/orders/order_create.html:99
-#: templates/orders/order_create.html:108
+#: templates/orders/order_create.html:119
+#: templates/orders/order_create.html:128
 msgid "$"
 msgstr "تومان"
+
+#: views.py:22
+msgid "You can not proceed to checkout page because your cart is empty!"
+msgstr ""
+"شما در حال حاضر به دلیل خالی بودن سبد خرید نمی توانید به صفحه سفارش بروید!"
+
+#: views.py:51
+msgid "your order has successfully registered!"
+msgstr "سفارش شما با موفقیت ثبت شد!"
 
 #~ msgid "if you have any notes please enter here otherwise leave it empty"
 #~ msgstr ""
