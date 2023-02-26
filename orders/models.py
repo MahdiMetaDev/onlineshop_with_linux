@@ -30,9 +30,16 @@ class Order(models.Model):
         verbose_name = _("order")
         verbose_name_plural = _("orders")
 
+
     def __str__(self):
+
         return f"Order {self.id}"
-    
+
+
+    def get_total_price(self):
+
+        return sum(item.quantity * item.price for item in self.items.all())
+
 
 class OrderItem(models.Model):
     
