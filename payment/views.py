@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
+from django.http import HttpResponse
 
 import requests
 import json
@@ -28,7 +29,7 @@ def payment_process(request):
         "merchant_id": "[PUT YOUR MERCHANT_ID HERE!!]",
         "amount": rial_total_price,
         "description": f"#{order.id}: {order.user.first_name} {order.user.last_name}",
-        "callback_url": "127.0.0.1:8000",
+        "callback_url": "http://127.0.0.1:8000",
     }
 
     zp_response = requests.post(url=zarinpal_request_url, data=json.dumps(request_data),
@@ -39,3 +40,7 @@ def payment_process(request):
     order.zarinpal_authority = authority
     order.save()
     
+    if ("errors" not in data) or (len(data["errors"]) == 0):
+        return redirect(f"https://www.zarinpal.com/pg/StartPay/{authority}")
+    else:
+        return HttpResponse("Error from zarinpal occured!")
