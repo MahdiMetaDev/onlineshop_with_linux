@@ -33,3 +33,9 @@ def payment_process(request):
 
     zp_response = requests.post(url=zarinpal_request_url, data=json.dumps(request_data),
                  headers=request_header)
+
+    data = zp_response.json()["data"]
+    authority = data["authority"]
+    order.zarinpal_authority = authority
+    order.save()
+    
