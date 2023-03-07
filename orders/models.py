@@ -16,6 +16,8 @@ class Order(models.Model):
     )
     is_paid = models.BooleanField(_("paid"), default=False)
     zarinpal_authority = models.CharField(max_length=255, blank=True)
+    zarinpal_ref_id = models.CharField(max_length=150, blank=True)
+    zarinpal_data = models.TextField(blank=True)
 
     first_name = models.CharField(_("name"), max_length=100)
     last_name = models.CharField(_("family_name"), max_length=100)
